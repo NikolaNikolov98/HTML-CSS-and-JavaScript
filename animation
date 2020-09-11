@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title> CSS animation</title>
+    <style>
+      
+      .transition-me {
+       
+        transition-duration: 5s;
+        /*закъснението важи и след махането на мишката*/
+        transition-delay: : 1s;
+        /*Запозчва да мига* при посочване*/
+        transition-property: background-color;;
+        
+        /*Времетраене за всяко едно от свойтвата -  background, color, padding-left*/
+       /* transition-duration: 0.5s, 0.5s, 0.3s;
+        transition-delay: 0s, 0.5s, 1s;
+        transition-property: background, color, padding-left;
+        */
+        
+        /*3-ти вариант*/
+        transition: background 0.5s, border 0.3s 1s, font-size 0.5s;
+        
+        
+        padding: 16px;
+        cursor: pointer;
+        /* those properties will be animated from */
+        color: orange;
+        background: black;
+      }
+      
+       .transition-me:hover {
+        /* those properties will be animated to */
+        background: orangered;
+        color: white;
+      }
+      
+      
+      /**/
+       p {
+            transition: 250ms;
+        }
+        p:hover {
+            background-color: green;
+            color: white;
+        }
+      
+      
+      
+    </style>
+  </head>
+  <body>
+    
+    <div class="transition-me"> CSS Animations are fun!
+    </div>
+    
+    <p>paragraph</p>
+
+    
+  </body>
+</html>
