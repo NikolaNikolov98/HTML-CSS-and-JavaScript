@@ -34,10 +34,7 @@
         border: 2px solid red;
         }
         
-        .checkbox input {
-        float: left;
-        margin-right: 10px;
-        width: auto;
+        
         }
         button {
         background: green;
@@ -67,11 +64,7 @@
                 <input id="last_name" type="text" name="lastname" required />
                 </div>
             
-                <div class="checkbox">
-                <input id="newsletter" type="checkbox" name="newsletter" 
-                value="yes" />
-                <label for="newsletter">Sign up for newsletter</label>
-                </div>
+            
                 
                 <div>
                 <label for="email">Email: <span>*</span></label>
