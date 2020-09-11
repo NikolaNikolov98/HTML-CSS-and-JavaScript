@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Exercise 3.02</title>
+        <style>
+ 
+ /* ПРИМЕР ЗА РЕСЕТ
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, 
+p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, 
+dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, 
+tt, var, b, u, i, center,dl, dt, dd, ol, ul, li, fieldset, form, 
+label, legend, table, caption, tbody, tfoot, thead, tr, th, td, 
+article, aside, canvas, details, embed, figure, figcaption, footer, 
+header, hgroup, menu, nav, output, ruby, section, summary,time, mark, 
+audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+*/
+ 
+ 
+ 
+ 
+ /*ресетват се всички първоначални данни, които ще се ползват*/
+ 
+  *  {
+    margin: 0;
+    padding: 0;
+  }
+  
+    nav ul {/* flex - прави съдржанието/блоковете да са хоризонтални*/
+    display: flex;
+    /* none - Изчиства стила на листа/елементите, в случая маха точките по подразбиране*/
+    list-style: none;
+  }
+  
+    nav a {
+    color: red;
+    font-weight: bold;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    background-color: scyblue;
+  }
+  /* когато се посочи с мишката се показва подчертаване*/
+    nav a:hover {
+    text-decoration: underline;
+    color: green;
+    background-color: black;
+  }
+   
+  
+  
+</style>
+    </head>
+    <body>
+  <nav>
+    <ul>
+      <li><a href="">nav link</a></li>
+      <li><a href="">nav link  </a></li>
+      <li><a href="">nav link</a></li>
+      
+    </ul>
+  </nav>
+</body>
+</html>
