@@ -1,0 +1,34 @@
+<html>
+   
+   
+   
+
+    <body>
+        
+        
+        <script>
+  var sec, min, hrs, date,
+  setTime = function() {
+      date = new Date();
+      hrs = date.getHours();
+      min = date.getMinutes();
+      sec = date.getSeconds();
+      
+     
+       //document.body.innerHTML = `${hrs}:${mins}`:${secs<10}?`${0}${secs}`:`${secs}`; 
+      
+      //document.body.innerHTML = `${hrs}:${mins}:${secs}`; //1 variant
+    //2-variant
+    if(sec<10){
+        document.body.innerHTML = `${hrs}:${min}:${0}${sec}`;
+     }else document.body.innerHTML = `${hrs}:${mins}:${secs}`;
+      
+  }
+  
+    setInterval(setTime, 1000);
+    </script>
+    
+    
+    </body>
+</html>
+
