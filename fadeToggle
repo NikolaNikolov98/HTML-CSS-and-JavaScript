@@ -1,0 +1,22 @@
+<html>
+    
+   <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+    <body>
+        <button id="ButonClic">Clikk me </button>
+         <p id="P" style="display: none;" >Hello </p>
+        
+        <script>
+            const BUTON= $("#ButonClic");
+             const PAR= $("#P");
+             //задължитерно с малки букви
+             BUTON.on("click",function(){
+             PAR.fadeToggle();
+             //друг вариант
+             //PAR.fadeToggle(3000);
+             });
+        </script>
+        
+    </body>
+</html>
